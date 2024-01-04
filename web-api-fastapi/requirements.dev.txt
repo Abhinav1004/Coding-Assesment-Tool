@@ -1,0 +1,17 @@
+-r requirements.txt
+pytest
+coverage
+code-quality
+flake8
+black
+pre-commit
+mock
+mongomock
+click
+mypy-extensions
+nodeenv
+packaging
+pycodestyle
+testing.common.database
+testing.postgresql
+httpx

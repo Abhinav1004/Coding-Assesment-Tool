@@ -1,5 +1,6 @@
-from .models import RequestModelGeneric
+from .models import RequestModelPredictRating, ResponseModelPredictRating
 
 __all__ = [
-    "RequestModelGeneric"
+    "RequestModelPredictRating",
+    "ResponseModelPredictRating"
 ]
