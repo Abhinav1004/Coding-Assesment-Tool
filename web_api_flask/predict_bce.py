@@ -95,7 +95,6 @@ def crossdomain(origin=None, methods=None, headers=None, max_age=21600, attach_t
 @crossdomain(origin='*')
 def predict_bce():
     description = request.get_json()
-    # print(description)
     x_test = dict()
     for feature in features_list:
         x_test[feature] = description[feature]
