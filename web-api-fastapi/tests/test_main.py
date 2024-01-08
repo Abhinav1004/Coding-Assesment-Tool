@@ -13,7 +13,7 @@ class IntegrationTestCases(unittest.TestCase):
     def test_health_checkpoint(self):
         response = self.client.get("/health")
         self.assertEqual(response.status_code, 200)
-        self.assertEqual(response.json(), {"learning-phase-engine": "ok"})
+        self.assertEqual(response.json(), {"developer-rating-engine": "ok"})
 
     def test_success(self):
         # TODO: Test for success

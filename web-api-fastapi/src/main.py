@@ -29,10 +29,10 @@ except Exception as e:
 @app.get("/health")
 def health():
     """Health Endpoint"""
-    return {"rating-engine": "ok"}
+    return {"developer-rating-engine": "ok"}
 
 
-@app.post("/get-rating", status_code=status.HTTP_201_CREATED)
+@app.post("/get-developer-rating", status_code=status.HTTP_201_CREATED)
 async def predict_developer_rating(
     request: RequestModelPredictRating
 ):
